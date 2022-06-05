@@ -142,6 +142,7 @@
     <ClInclude Include="Car.h" />
     <ClInclude Include="MainHead.h" />
     <ClInclude Include="PoliceData.h" />
+    <ClInclude Include="UI.h" />
     <ClInclude Include="WantedCar.h" />
     <ClInclude Include="WantedPoliceData.h" />
   </ItemGroup>
@@ -149,6 +150,7 @@
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="PoliceData.cpp" />
+    <ClCompile Include="UI.cpp" />
     <ClCompile Include="WantedCar.cpp" />
     <ClCompile Include="WantedPoliceData.cpp" />
   </ItemGroup>
