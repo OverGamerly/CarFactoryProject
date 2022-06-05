@@ -4,6 +4,7 @@
 class Car
 {
 private:
+	string type;
 	string brand;
 	string model;
 	int age;
@@ -25,8 +26,9 @@ public:
 	int getAge();
 	int getSecNumber();
 	int getCost();
+	string getType();
 
-	string getInfo();
+	virtual string getInfo();
 
 };
 

@@ -142,11 +142,15 @@
     <ClInclude Include="Car.h" />
     <ClInclude Include="MainHead.h" />
     <ClInclude Include="PoliceData.h" />
+    <ClInclude Include="WantedCar.h" />
+    <ClInclude Include="WantedPoliceData.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="PoliceData.cpp" />
+    <ClCompile Include="WantedCar.cpp" />
+    <ClCompile Include="WantedPoliceData.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

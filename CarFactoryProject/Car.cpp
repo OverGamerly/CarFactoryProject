@@ -14,6 +14,7 @@ Car::Car(string brand, string model, int age, int secNumber, int cost) {
 	this->age = age;
 	this->secNumber = secNumber;
 	this->cost = cost;
+	type = "standart";
 }
 
 Car::~Car() {
@@ -60,8 +61,13 @@ int Car::getCost() {
 	return cost;
 }
 
+string Car::getType()
+{
+	return type;
+}
+
 string Car::getInfo()
 {
-	return "-------CAR INFO------\nCar brand: " + brand + "\nModel: " + model
+	return "-------CAR INFO------\nCar type: " + getType() + "\nBrand: " + brand + "\nModel: " + model
 		+ "\nAge: " + to_string(age) + "\nCost: " + to_string(cost) + "$\n--------------------";
 }

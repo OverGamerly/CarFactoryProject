@@ -24,6 +24,12 @@
     <ClInclude Include="PoliceData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="WantedCar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WantedPoliceData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -33,6 +39,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PoliceData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WantedCar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WantedPoliceData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
