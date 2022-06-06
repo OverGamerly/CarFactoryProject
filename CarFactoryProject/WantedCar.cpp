@@ -3,6 +3,7 @@
 
 WantedCar::WantedCar()
 {
+
 }
 
 WantedCar::WantedCar(int rating, string nameCode, string brand, string model, int age, int secNumber, int cost) : Car(brand, model, age, secNumber, cost)

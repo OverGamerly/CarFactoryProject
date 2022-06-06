@@ -47,8 +47,8 @@ void CountOfWantedCars(int count)
 
 void Menu()
 {
-	
-
+	cout << "----------------------------" << endl;
+	cout << "Choose your data base: ";
 }
 
 int getYear(tm* ltm)

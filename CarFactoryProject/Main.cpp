@@ -20,6 +20,7 @@ int main()
 	PoliceStatic();
 	CountOfCars(twpd.getCount());
 	CountOfWantedCars(twwpd.getCount());
+	Menu();
 	
 	return 0;
 }
