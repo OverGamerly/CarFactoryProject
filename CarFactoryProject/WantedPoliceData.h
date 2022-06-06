@@ -15,6 +15,7 @@ public:
 	~WantedPoliceData();
 
 	string getInfo();
+	int getCount();
 
 	void addNewCar(WantedCar car);
 	void deleteCar(int index);

@@ -46,7 +46,10 @@ string WantedPoliceData::getInfo()
 	return msg;
 }
 
-
+int WantedPoliceData::getCount()
+{
+	return count;
+}
 
 void WantedPoliceData::addNewCar(WantedCar car)
 {

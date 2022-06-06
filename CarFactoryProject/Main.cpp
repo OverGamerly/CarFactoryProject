@@ -8,11 +8,18 @@
 
 int main()
 {
+	Car car;
 	time_t now = time(0);
 	tm* ltm = localtime(&now);
+	PoliceData twpd("City Police Department");
+	WantedPoliceData twwpd("City Police Department.W");
 
+	start:
 	Start();
 	HighPage(ltm);
-
+	PoliceStatic();
+	CountOfCars(twpd.getCount());
+	CountOfWantedCars(twwpd.getCount());
+	
 	return 0;
 }

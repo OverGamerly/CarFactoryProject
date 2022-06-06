@@ -29,6 +29,11 @@ PoliceData::~PoliceData()
 	}
 }
 
+int PoliceData::getCount()
+{
+	return count;
+}
+
 string PoliceData::getInfo()
 {
 	if (list == NULL)

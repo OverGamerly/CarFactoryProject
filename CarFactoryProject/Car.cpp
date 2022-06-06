@@ -6,6 +6,7 @@ Car::Car() {
 	age = 0;
 	secNumber = 0;
 	cost = 0;
+	type = "standart";
 }
 
 Car::Car(string brand, string model, int age, int secNumber, int cost) {
@@ -104,5 +105,5 @@ Car Car::newCar()
 string Car::getInfo()
 {
 	return "-------CAR INFO------\nCar type: " + getType() + "\nBrand: " + brand + "\nModel: " + model
-		+ "\nAge: " + to_string(age) + "\nCost: " + to_string(cost) + "$" + "Security number: " + to_string(secNumber) + "\n--------------------";
+		+ "\nAge: " + to_string(age) + "\nCost: " + to_string(cost) + "$" + "\nSecurity number: " + to_string(secNumber) + "\n--------------------";
 }
