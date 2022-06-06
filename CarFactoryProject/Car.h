@@ -28,6 +28,8 @@ public:
 	int getCost();
 	string getType();
 
+	Car newCar();
+
 	virtual string getInfo();
 
 };

@@ -66,8 +66,43 @@ string Car::getType()
 	return type;
 }
 
+Car Car::newCar()
+{
+	Car createCar;
+
+	string type = "standart";
+	string brand;
+	string model;
+	int age;
+	int cost;
+	int secNumber;
+	cout << "\t=====   =   =====    == ==  = ==== ====="  << endl;
+	cout << "\t=      = =  =   =    == = = = =    =   =" << endl;
+	cout << "\t=      ===  =====    == = = = ==== =   =" << endl;
+	cout << "\t=     =   = ===      == =  == =    =   =" << endl;
+	cout << "\t====- =   = =  ==    == =   = =    =====" << endl;
+	cout << "\t----------------------------------------" << endl;
+	cout << "Car brand: ";
+	cin >> brand;
+	cout << "Car model: ";
+	cin >> model;
+	cout << "Car age: ";
+	cin >> age;
+	cout << "Car cost: ";
+	cin >> cost;
+	cout << "Car security number: ";
+	cin >> secNumber;
+	createCar.setBrand(brand);
+	createCar.setModel(model);
+	createCar.setAge(age);
+	createCar.setCost(cost);
+	createCar.setSecNumber(secNumber);
+
+	return createCar;
+}
+
 string Car::getInfo()
 {
 	return "-------CAR INFO------\nCar type: " + getType() + "\nBrand: " + brand + "\nModel: " + model
-		+ "\nAge: " + to_string(age) + "\nCost: " + to_string(cost) + "$\n--------------------";
+		+ "\nAge: " + to_string(age) + "\nCost: " + to_string(cost) + "$" + "Security number: " + to_string(secNumber) + "\n--------------------";
 }
