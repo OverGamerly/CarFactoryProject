@@ -67,9 +67,9 @@ string Car::getType()
 	return type;
 }
 
-Car Car::newCar()
+Car* Car::newCar()
 {
-	Car createCar;
+	Car *createCar = new Car;
 
 	string type = "standart";
 	string brand;
@@ -81,7 +81,7 @@ Car Car::newCar()
 	cout << "\t=      = =  =   =    == = = = =    =   =" << endl;
 	cout << "\t=      ===  =====    == = = = ==== =   =" << endl;
 	cout << "\t=     =   = ===      == =  == =    =   =" << endl;
-	cout << "\t====- =   = =  ==    == =   = =    =====" << endl;
+	cout << "\t===== =   = =  ==    == =   = =    =====" << endl;
 	cout << "\t----------------------------------------" << endl;
 	cout << "Car brand: ";
 	cin >> brand;
@@ -93,11 +93,11 @@ Car Car::newCar()
 	cin >> cost;
 	cout << "Car security number: ";
 	cin >> secNumber;
-	createCar.setBrand(brand);
-	createCar.setModel(model);
-	createCar.setAge(age);
-	createCar.setCost(cost);
-	createCar.setSecNumber(secNumber);
+	createCar->setBrand(brand);
+	createCar->setModel(model);
+	createCar->setAge(age);
+	createCar->setCost(cost);
+	createCar->setSecNumber(secNumber);
 
 	return createCar;
 }

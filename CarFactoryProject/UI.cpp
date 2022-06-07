@@ -48,7 +48,21 @@ void CountOfWantedCars(int count)
 void Menu()
 {
 	cout << "----------------------------" << endl;
-	cout << "Choose your data base: ";
+	cout << "==   == ===== ==    = =    =" << endl;
+	cout << "= = = = =     = =   = =    =" << endl;
+	cout << "=  =  = ===== =  =  = =    =" << endl;
+	cout << "=     = =     =   = = =    =" << endl;
+	cout << "=     = ===== =    ==  ====" << endl;
+	cout << "----------------------------" << endl;
+	cout << "1. Add new car" << endl;
+	cout << "2. Add new wanted car" << endl;
+	cout << "3. Remove car" << endl;
+	cout << "4. Cost sort" << endl;
+	cout << "5. Age sort" << endl;
+	cout << "6. Rating sort" << endl;
+	cout << "7. Get Data Base info" << endl;
+	cout << "Your choose: ";
+
 }
 
 int getYear(tm* ltm)

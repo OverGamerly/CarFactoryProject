@@ -18,5 +18,6 @@ public:
 	void setNameCode(string nameCode);
 
 	string getInfo() override;
+	WantedCar* newCar() override;
 };
 

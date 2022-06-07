@@ -14,7 +14,7 @@ PoliceData::PoliceData(string name)
 	list = NULL;
 }
 
-PoliceData::PoliceData(string name, int count, Car* list)
+PoliceData::PoliceData(string name, int count, Car** list)
 {
 	this->name = name;
 	this->count = count;
@@ -45,7 +45,7 @@ string PoliceData::getInfo()
 
 	for (int i = 0; i < count; i++)
 	{
-		msg += list[i].getInfo() + "\n";
+		msg += "Index: " + to_string(i) + "\n" + list[i]->getInfo() + "\n";
 	}
 
 	return msg;
@@ -53,17 +53,17 @@ string PoliceData::getInfo()
 
 
 
-void PoliceData::addNewCar(Car car)
+void PoliceData::addNewCar(Car* car)
 {
 	if (list == NULL)
 	{
-		list = new Car[1];
+		list = new Car*[1];
 		count = 1;
 		list[0] = car;
 	}
 	else
 	{
-		Car* temp = new Car[count + 1];
+		Car** temp = new Car*[count + 1];
 		int i = 0;
 		for (; i < count; i++)
 		{
@@ -73,6 +73,7 @@ void PoliceData::addNewCar(Car car)
 		delete[] list;
 		list = temp;
 		count++;
+		delete[] temp;
 	}
 }
 
@@ -80,7 +81,7 @@ void PoliceData::deleteCar(int index)
 {
 	if (list != NULL && index >= 0 && index < count)
 	{
-		Car* temp = new Car[count - 1];
+		Car** temp = new Car*[count - 1];
 
 		for (int i = 0, j = 0; i < count; i++)
 		{
@@ -94,5 +95,6 @@ void PoliceData::deleteCar(int index)
 		delete[] list;
 		list = temp;
 		count--;
+		delete[] temp;
 	}
 }

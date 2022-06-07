@@ -6,18 +6,18 @@ class PoliceData
 private:
 	string name;
 	int count;
-	Car* list;
+	Car** list;
 public:
 
 	PoliceData();
 	PoliceData(string name);
-	PoliceData(string name, int count, Car* list);
+	PoliceData(string name, int count, Car** list);
 	~PoliceData();
 
 	string getInfo();
 	int getCount();
 
-	void addNewCar(Car car);
+	void addNewCar(Car* car);
 	void deleteCar(int index);
 
 };

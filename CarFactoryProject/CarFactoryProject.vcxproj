@@ -144,7 +144,6 @@
     <ClInclude Include="PoliceData.h" />
     <ClInclude Include="UI.h" />
     <ClInclude Include="WantedCar.h" />
-    <ClInclude Include="WantedPoliceData.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Car.cpp" />
@@ -152,7 +151,6 @@
     <ClCompile Include="PoliceData.cpp" />
     <ClCompile Include="UI.cpp" />
     <ClCompile Include="WantedCar.cpp" />
-    <ClCompile Include="WantedPoliceData.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

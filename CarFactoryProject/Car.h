@@ -28,7 +28,7 @@ public:
 	int getCost();
 	string getType();
 
-	Car newCar();
+	virtual Car* newCar();
 
 	virtual string getInfo();
 

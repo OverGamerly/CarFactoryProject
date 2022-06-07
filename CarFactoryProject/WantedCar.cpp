@@ -39,3 +39,46 @@ string WantedCar::getInfo()
 		+ "\nAge: " + to_string(getAge()) + "\nCost: " + to_string(getCost()) + "$"
 		+ "\nRating: " + to_string(getRating()) + "wp" + "\nName code: " + getNameCode() + "\n--------------------";
 }
+
+WantedCar* WantedCar::newCar()
+{
+	WantedCar* createCar = new WantedCar;
+
+	string type = "in wanted";
+	string brand;
+	string model;
+	string nameCode;
+	int age;
+	int cost;
+	int secNumber;
+	int rating;
+	cout << "\t=====   =   =====    == ==  = ==== =====" << endl;
+	cout << "\t=      = =  =   =    == = = = =    =   =" << endl;
+	cout << "\t=      ===  =====    == = = = ==== =   =" << endl;
+	cout << "\t=     =   = ===      == =  == =    =   =" << endl;
+	cout << "\t===== =   = =  ==    == =   = =    =====" << endl;
+	cout << "\t----------------------------------------" << endl;
+	cout << "Car brand: ";
+	cin >> brand;
+	cout << "Car model: ";
+	cin >> model;
+	cout << "Car name code: ";
+	cin >> nameCode;
+	cout << "Car age: ";
+	cin >> age;
+	cout << "Car cost: ";
+	cin >> cost;
+	cout << "Car security number: ";
+	cin >> secNumber;
+	cout << "Car rating: ";
+	cin >> rating;
+	createCar->setBrand(brand);
+	createCar->setModel(model);
+	createCar->setNameCode(nameCode);
+	createCar->setAge(age);
+	createCar->setCost(cost);
+	createCar->setSecNumber(secNumber);
+	createCar->setRating(rating);
+
+	return createCar;
+}
