@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Car.h" />
+    <ClInclude Include="MainFunc.h" />
     <ClInclude Include="MainHead.h" />
     <ClInclude Include="PoliceData.h" />
     <ClInclude Include="UI.h" />
