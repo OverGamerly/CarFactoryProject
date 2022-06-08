@@ -73,7 +73,6 @@ void PoliceData::addNewCar(Car* car)
 		delete[] list;
 		list = temp;
 		count++;
-		delete[] temp;
 	}
 }
 
@@ -85,7 +84,7 @@ void PoliceData::deleteCar(int index)
 
 		for (int i = 0, j = 0; i < count; i++)
 		{
-			if (i != count)
+			 if (index != i)
 			{
 				temp[j] = list[i];
 				j++;
@@ -95,6 +94,5 @@ void PoliceData::deleteCar(int index)
 		delete[] list;
 		list = temp;
 		count--;
-		delete[] temp;
 	}
 }

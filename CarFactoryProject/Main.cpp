@@ -21,7 +21,7 @@ int main()
 	CountOfCars(twpd.getCount());
 	Menu();
 	choose = 0;
-	while (choose < 1 || choose > 5)
+	while (choose < 1 || choose > 8)
 	{
 		cin >> choose;
 	}
@@ -52,6 +52,16 @@ int main()
 			cin >> *index;
 		}
 		twpd.deleteCar(*index);
+		system("cls");
+		goto start;
+	}
+	if (choose == 7)
+	{
+		system("cls");
+		Start();
+		HighPage(ltm);
+		cout << twpd.getInfo() << endl;
+		_getch();
 		system("cls");
 		goto start;
 	}
