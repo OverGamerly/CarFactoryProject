@@ -3,7 +3,7 @@
 
 class PoliceData
 {
-private:
+protected:
 	string name;
 	int count;
 	Car** list;
@@ -20,5 +20,7 @@ public:
 	void addNewCar(Car* car);
 	void deleteCar(int index);
 
+	void CostSort();
+	void AgeSort();
 };
 

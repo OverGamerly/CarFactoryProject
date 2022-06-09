@@ -96,3 +96,45 @@ void PoliceData::deleteCar(int index)
 		count--;
 	}
 }
+
+void PoliceData::CostSort()
+{
+	Car* temp = new Car();
+	int costOne;
+	int costTwo;
+
+	for (int i = 0; i < count; i++)
+	{
+
+		for (int j = 0; j < count - 1; j++)
+		{
+			temp = list[j];
+
+			if (list[j]->getCost() > list[j + 1]->getCost())
+			{
+				list[j] = list[j + 1];
+				list[j + 1] = temp;
+			}
+		}
+	}
+}
+
+void PoliceData::AgeSort()
+{
+	Car* temp = new Car();
+
+	for (int i = 0; i < count; i++)
+	{
+
+		for (int j = 0; j < count - 1; j++)
+		{
+			temp = list[j];
+
+			if (list[j]->getAge() > list[j + 1]->getAge())
+			{
+				list[j] = list[j + 1];
+				list[j + 1] = temp;
+			}
+		}
+	}
+}

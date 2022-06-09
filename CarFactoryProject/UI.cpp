@@ -59,8 +59,7 @@ void Menu()
 	cout << "3. Remove car" << endl;
 	cout << "4. Cost sort" << endl;
 	cout << "5. Age sort" << endl;
-	cout << "6. Rating sort" << endl;
-	cout << "7. Get Data Base info" << endl;
+	cout << "6. Get Data Base info" << endl;
 	cout << "Your choose: ";
 
 }

@@ -57,9 +57,17 @@ int main()
 	}
 	if (choose == 4)
 	{
-
+		twpd.CostSort();
+		system("cls");
+		goto start;
 	}
-	if (choose == 7)
+	if (choose == 5)
+	{
+		twpd.AgeSort();
+		system("cls");
+		goto start;
+	}
+	if (choose == 6)
 	{
 		system("cls");
 		Start();
